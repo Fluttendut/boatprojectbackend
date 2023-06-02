@@ -17,7 +17,6 @@ public class RaceService {
     private RaceRepository raceRepo;
 
     public List<Race> getAllRaces(){
-        //Jeg har ikke implimenteret boatRepo.findAll det er bare noget der er der i JPA
         return raceRepo.findAll();
     }
 
@@ -27,8 +26,6 @@ public class RaceService {
 
     public void updateRace (Race race, int id) {
         var existing =  raceRepo.findById(id).orElse(null);
-
-        // TODO
 
         raceRepo.save(existing);
     }

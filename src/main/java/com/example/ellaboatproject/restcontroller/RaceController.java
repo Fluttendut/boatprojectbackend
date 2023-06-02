@@ -37,7 +37,6 @@ public class RaceController {
         raceService.deleteRace(id);
     }
 
-    // This is used to set points, for an existing race/boat combo, by using the primary key of that row..
     @PostMapping("/updatescoreById/{id}")
     public void setPointsInRace (@PathVariable int id, @RequestBody Race race) {
         raceService.setPointsInRace(id, race);

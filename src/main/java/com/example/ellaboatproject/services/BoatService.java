@@ -17,7 +17,6 @@ public class BoatService {
     private BoatRepository boatRepo;
 
     public List<Boat> getAllBoats(){
-        //Jeg har ikke implimenteret boatRepo.findAll det er bare noget der er der i JPA
         return boatRepo.findAll();
     }
 

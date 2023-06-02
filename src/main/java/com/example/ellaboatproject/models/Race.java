@@ -11,7 +11,7 @@ public class Race {
     private int id;
 
     @Column(nullable = false)
-    private int raceNumber;
+    private int raceDate;
 
 
     @Column(nullable = false)
@@ -21,12 +21,12 @@ public class Race {
     private int points;
 
 
-    public int getRaceNumber() {
-        return raceNumber;
+    public int getRaceDate() {
+        return raceDate;
     }
 
-    public void setRaceNumber(int raceNumber) {
-        this.raceNumber = raceNumber;
+    public void setRaceDate(int raceDate) {
+        this.raceDate = raceDate;
     }
 
     public int getBoatId() {
